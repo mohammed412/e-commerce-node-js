@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require('bcrypt')
-const DB_URL = "mongodb://localhost:27017/online-shop";
+const DB_URL = "mongodb://0.0.0.0:27017/online-shop";
 
 
 const User = mongoose.model('user', new mongoose.Schema({

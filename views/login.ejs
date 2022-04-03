@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <% if(authError) { %>
+        <%= authError %>
+    <% } %>
     <form action="/login" method="post">
         <input type="email" name="email" id="">
         <input type="password" name="password" id="">

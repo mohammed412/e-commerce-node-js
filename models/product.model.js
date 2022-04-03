@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const DB_URL = "mongodb://localhost:27017/online-shop"
+const DB_URL = "mongodb://0.0.0.0:27017/online-shop";
 const Product = mongoose.model('product', new mongoose.Schema({
     name: String,
     image: String,

@@ -15,6 +15,23 @@
               <li class="nav-item">
                 <a class="nav-link" href="">Our Products</a>
               </li>
+              
+              
+              <% if(isLogged){ %>
+                <li class="nav-item">
+                <a class="nav-link" href="">Your Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+              <%}else{%>
+                <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/singup">Singup</a>
+              </li>
+                <%}%>
               <li class="nav-item">
                 <a class="nav-link" href="">About Us</a>
               </li>
