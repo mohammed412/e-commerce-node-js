@@ -18,6 +18,7 @@ exports.postSingup = (req, res, next) => {
 exports.getLogin = (req, res, next) => {
     res.render('login', {
         authError: req.flash('error')[0],
+        isLogged: true?req.session.userId:false
     })
 }
 exports.postLogin = (req, res, next) => {
